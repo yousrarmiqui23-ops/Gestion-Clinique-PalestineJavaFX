@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightBlue" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clinique.controller.ajouterPatientController">
+    <children>
+        <ImageView fitHeight="493.0" fitWidth="782.0" layoutX="-20.0" layoutY="-77.0" preserveRatio="true">
+            <image>
+                <Image url="@../image/photo5.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="txtNom" layoutX="134.0" layoutY="120.0" />
+        <TextField fx:id="txtPrenom" layoutX="134.0" layoutY="180.0" />
+        <TextField fx:id="txtCin" layoutX="134.0" layoutY="232.0" />
+        <TextField fx:id="txtTlphn" layoutX="134.0" layoutY="288.0" />
+        <TextField fx:id="txtGS" layoutX="509.0" layoutY="180.0" />
+        <TextField fx:id="txtAdresse" layoutX="509.0" layoutY="247.0" />
+
+        <Label layoutX="51.0" layoutY="120.0" prefHeight="25.0" prefWidth="39.0" text="Nom: ">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+        <Label layoutX="51.0" layoutY="184.0" prefHeight="17.0" prefWidth="63.0" text="Prénom:">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+        <Label layoutX="51.0" layoutY="238.0" prefHeight="17.0" prefWidth="39.0" text="Cin : ">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+        <Label layoutX="401.0" layoutY="184.0" prefHeight="17.0" prefWidth="102.0" text="Groupe-Sanguin :">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+        <Label layoutX="51.0" layoutY="292.0" prefHeight="17.0" prefWidth="102.0" text="Téléphone :">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+        <Label layoutX="401.0" layoutY="251.0" prefHeight="17.0" prefWidth="102.0" text="Adresse:">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+        <Button fx:id="ajouter" layoutX="370.0" layoutY="351.0" mnemonicParsing="false" onAction="#AjouterPatient" text="Ajouter ">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="51.0" layoutY="22.0" prefHeight="37.0" prefWidth="185.0" text="Ajouter patient :">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

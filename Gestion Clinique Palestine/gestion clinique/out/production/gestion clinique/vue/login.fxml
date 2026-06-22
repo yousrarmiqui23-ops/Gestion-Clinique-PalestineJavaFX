@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F7EEE7;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clinique.controller.loginController">
+    <children>
+        <ImageView fitHeight="595.0" fitWidth="711.0" layoutX="-27.0" layoutY="-38.0" preserveRatio="true">
+            <image>
+                <Image url="@../image/photo3.png" />
+            </image>
+        </ImageView>
+
+        <Accordion layoutX="176.0" layoutY="54.0" />
+        <Label graphicTextGap="8.0" layoutX="187.0" layoutY="20.0" prefHeight="89.0" prefWidth="367.0" text="Clinique PALESTINE" textFill="#0b6e11">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bad7e9" height="179.0" layoutX="145.0" layoutY="210.0" stroke="#efefef" strokeType="INSIDE" width="342.0" />
+        <PasswordField fx:id="password" layoutX="316.0" layoutY="315.0" />
+        <Line endX="256.6666259765625" endY="-3.0517578125E-5" layoutX="229.0" layoutY="397.0" startX="-84.0" startY="7.62939453125E-6" />
+        <Label layoutX="156.0" layoutY="218.0" prefHeight="47.0" prefWidth="108.0" text="Log in : " textFill="#030d01">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="219.0" layoutY="274.0" prefHeight="25.0" prefWidth="66.0" text="email :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+        <Label layoutX="220.0" layoutY="318.0" prefHeight="19.0" prefWidth="87.0" text="password : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+        <TextField fx:id="email" layoutX="316.0" layoutY="274.0" />
+        <Button fx:id="loginButton" layoutX="409.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="27.0" prefWidth="66.0" text="Log in " textAlignment="CENTER" textOverrun="CLIP">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+      <Line endX="194.66665649414062" endY="-3.814697265625E-5" layoutX="229.0" layoutY="81.0" startX="-48.00001525878906" startY="-3.814697265625E-5" />
+    </children>
+
+
+</AnchorPane>
